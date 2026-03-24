@@ -1,10 +1,10 @@
-import Heading from "./Heading.jsx";
-import Home from "./Home.jsx";
-import About from "./About.jsx";
-import Proficiency from "./Proficiency.jsx";
-import Education from "./Education.jsx";
-import Getintouch from "./Getintouch.jsx";
-import Contactme from "./Contactme.jsx";
+import Heading from "./Components/Heading.jsx";
+import Home from "./Components/Home.jsx";
+import About from "./Components/About.jsx";
+import Proficiency from "./Components/Proficiency.jsx";
+import Education from "./Components/Education.jsx";
+import Getintouch from "./Components/Getintouch.jsx";
+import Contactme from "./Components/Contactme.jsx";
 
 function Homepage() {
     return (
