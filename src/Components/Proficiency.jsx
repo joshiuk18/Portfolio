@@ -1,6 +1,9 @@
+import Lottie from "lottie-react";
+import Man_robot from '../Animation/Man_robot.json';
+
 function Proficiency({ theme }) {
     return (
-        <div className="w-full min-h-[80vh] flex items-center justify-center px-4 bg-white text-black dark:bg-gray-900 dark:text-white">
+        <div className="w-full min-h-[80vh] flex items-center justify-center px-4 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 
             <div className="flex flex-col md:flex-row items-center gap-12 max-w-7xl w-full">
 
@@ -27,8 +30,7 @@ function Proficiency({ theme }) {
                 </div>
 
                 <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2">
-                    <img src={theme === "dark" ? "/proficiencyblack.jpg" : "/proficiencywhite.jpg"} alt="proficiency"
-                        className="w-64 sm:w-72 md:w-80 lg:w-[450px] h-auto object-contain" />
+                    <Lottie animationData={Man_robot} />
                 </div>
             </div>
         </div>

@@ -1,6 +1,9 @@
+import Lottie from "lottie-react";
+import Developer from '../Animation/Developer.json';
+
 function About({ theme }) {
     return (
-        <div id="about" className="scroll-mt-20 w-full min-h-[70vh] px-4 bg-white text-black dark:bg-gray-900 dark:text-white">
+        <div id="about" className="scroll-mt-20 w-full min-h-[70vh] px-4 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 
             <div className="text-center text-2xl sm:text-3xl font-bold py-6">
                 <p><i className="fa-solid fa-user mr-2"></i>About Me</p>
@@ -8,13 +11,11 @@ function About({ theme }) {
 
             <div className="flex flex-col md:flex-row max-w-7xl mx-auto items-center gap-10">
 
-                <div className="w-full md:w-1/2 flex justify-center">
-                    <img src={theme === "dark" ? "/aboutblack.jpg" : "/aboutwhite.jpg"} alt="myself"
-                        className="w-60 sm:w-72 md:w-80 lg:w-96 h-auto object-contain rounded-xl"
-                    />
+                <div className="w-full md:w-3/5 flex justify-center h-[500px]">
+                    <Lottie animationData={Developer} />
                 </div>
 
-                <div className="w-full md:w-1/2 text-center md:text-left">
+                <div className="w-full md:w-2/5 text-center md:text-left">
 
                     <p className="py-3 font-normal text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-gray-300">
                         A passionate Full Stack Software Developer having experience in building web applications.

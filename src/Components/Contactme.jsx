@@ -1,6 +1,6 @@
 function Contactme() {
     return (
-        <div className="w-full px-4 bg-white text-black dark:bg-gray-900 dark:text-white">
+        <div className="w-full px-4 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 
             <div className="flex flex-col md:flex-row max-w-7xl mx-auto items-center gap-10 py-10">
 
@@ -23,10 +23,8 @@ function Contactme() {
                         <i className="fa-solid fa-phone-volume hover:scale-150 text-[#25D366] cursor-pointer transition-transform"></i>
                     </span>
                 </div>
-
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
-                    <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl 
-                    border-4 border-blue-100 dark:border-gray-700">
+                    <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl border-4 border-blue-100 dark:border-gray-700">
                         <img src="/pj.jpg" alt="myself" className="w-full h-full object-cover" />
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 function Education({ theme }) {
 
     return (
-        <div id="education" className="scroll-mt-20 w-full px-4 py-12 md:py-16 bg-white text-black dark:bg-gray-900 dark:text-white" >
+        <div id="education" className="scroll-mt-20 w-full px-4 py-12 md:py-16 bg-gray-100 text-black dark:bg-gray-900 dark:text-white" >
 
             <div className="text-center text-2xl sm:text-3xl font-bold mb-8">
                 <p><i className="fa-solid fa-graduation-cap mr-2"></i>Education</p>

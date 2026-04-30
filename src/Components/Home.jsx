@@ -1,13 +1,22 @@
+import Lottie from "lottie-react";
+import handwave from '../Animation/handwave.json';
+
 function Home({ theme }) {
     return (
-        <div id="home" className="flex items-center justify-center min-h-[90vh] px-6 bg-white text-black dark:bg-gray-900 dark:text-white">
+        <div id="home" className="flex items-center justify-center min-h-[90vh] px-6 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 
             <div className="flex flex-col-reverse md:flex-row max-w-7xl w-full items-center gap-14">
 
                 <div className="w-full md:w-2/3 text-center md:text-left space-y-6">
 
                     <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-                        <div className="flex items-center justify-center md:justify-start gap-3 flex-wrap"><span>Hi all, 👋</span></div>
+                        <div className="flex items-center justify-center md:justify-start gap-2 flex-wrap">
+                            <span className="text-4xl font-medium">Hi all,</span>
+
+                            <div className="w-12 h-12">
+                                <Lottie animationData={handwave} />
+                            </div>
+                        </div>
                         <div className="mt-2">
                             I'm <span className="text-blue-700 font-bold">Prashant</span>
                         </div>

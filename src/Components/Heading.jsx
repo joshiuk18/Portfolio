@@ -1,3 +1,7 @@
+import Lottie from "lottie-react";
+import Sun from '../Animation/Sun.json';
+import Moon from '../Animation/Moon.json';
+
 import { useState } from "react";
 
 function Heading({ theme, setTheme }) {
@@ -14,7 +18,7 @@ function Heading({ theme, setTheme }) {
     };
 
     return (
-        <div className="w-full sticky top-0 z-50 bg-white dark:bg-gray-900 text-black dark:text-white shadow-md dark:ring-1 dark:ring-white/10">
+        <div className="w-full sticky top-0 z-50 bg-gray-100 dark:bg-gray-900 text-black dark:text-white shadow-md dark:ring-1 dark:ring-white/10">
 
             <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4" >
 
@@ -26,11 +30,18 @@ function Heading({ theme, setTheme }) {
                     <li onClick={() => scrollToSection("education")} className="hover:text-blue-600 cursor-pointer transition">Education</li>
                     <li onClick={() => scrollToSection("contact")} className="hover:text-blue-600 cursor-pointer transition">Contact</li>
                     <li>
-                        <button onClick={toggleTheme} className="ml-2 px-1 py-1 rounded-md text-sm transition">
+                        <button
+                            onClick={toggleTheme}
+                            className="ml-2 px-1 py-1 rounded-md text-sm transition"
+                        >
                             {theme === "dark" ? (
-                                <img src="/sun.png" alt="light mode" className="h-8 w-8" />
+                                <div className="w-10 h-10">
+                                    <Lottie animationData={Sun} />
+                                </div>
                             ) : (
-                                <img src="/moon.png" alt="dark mode" className="h-8 w-8" />
+                                <div className="w-10 h-10">
+                                    <Lottie animationData={Moon} />
+                                </div>
                             )}
                         </button>
                     </li>

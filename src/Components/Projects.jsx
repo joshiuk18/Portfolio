@@ -1,6 +1,6 @@
 function Projects() {
     return (
-        <div className="w-full px-4 py-16 bg-white text-black dark:bg-gray-900 dark:text-white">
+        <div className="w-full px-4 py-16 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 
             <h1 className="text-center text-3xl font-bold mb-12">
                 <i className="fa-solid fa-laptop-code"></i> Projects
